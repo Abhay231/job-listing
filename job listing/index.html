@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Job Listings</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script>
+    function toggleMobileMenu() {
+        var navbar = document.getElementById("navbar");
+        navbar.classList.toggle("nav-active");
+    }
+</script>
+    
+</head>
+<body>
+    <header>
+
+        <div class="company-name">Carson Pvt.</div>
+        <nav id="navbar">
+            <ul class="nav-links">
+                <li><a href="#">Open Roles</a></li>
+                <li><a href="#">Companies</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div
+              class="background-image"
+              role="img"
+              aria-label="Woman enjoying food">
+              <h1 class="hero-text ">Welcome to Our Company Careers</h1>
+              <p class="hero-text">Find your dream job and join our team of expertsital and Technology.All the latest jobs in Strategy, Management Consulting, Digital and Technology. Our clients range from some of the most renowned consulting firms in the world, to blue chip corporates and tier one financial institutions </p>
+        </div>
+        
+    </section>
+
+    <main>
+        <div class="search-bar">
+            <div class="dropdown">
+                <label for="job-search">Search Jobs:</label>
+                <select id="job-search">
+                    <option value="">Choose One</option>
+                    <option value="friends">Software development engineer </option>
+                    <option value="youtube">data analyst</option>
+                    <option value="podcast">Testing engineer</option>
+                    <option value="ad">Sales executive</option>
+                    <option value="others">Software Engineer</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="choose-country">Choose a Country:</label>
+                <select id="choose-country">
+                    <option value="">All Countries</option>
+                    
+                    <option value="friends">India </option>
+                    <option value="youtube">U.S</option>
+                    <option value="podcast">Australia</option>
+                    <option value="ad">England</option>
+                    <option value="others">Canada</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="choose-industry">Select Salary</label>
+                <select id="choose-industry">
+                    <option value="">Select </option>
+                    <option value="friends">$ 50,000</option>
+                    <option value="youtube">$ 60,000</option>
+                    <option value="podcast">$ 70,000</option>
+                    <option value="ad">$ 80,000</option>
+                    <option value="others">$ 90,000</option>
+                </select>
+            </div>
+            
+            <div class="search-button">
+                
+                <input type="text" placeholder="Search by keywords...">
+                <button>Search</button>
+            </div>
+            
+            
+        </div>
+
+        <div class="job-openings">
+            <div class="job-card">
+                <h2>Web Developer</h2>
+                <p>Company: ABC Tech</p>
+                <p>Location: New York</p>
+                <p>Salary: $80,000 per year</p>
+                <button class="apply-button">Apply</button>
+            </div>
+
+            <div class="job-card">
+                <h2>Graphic Designer</h2>
+                <p>Company: XYZ Designs</p>
+                <p>Location: Los Angeles</p>
+                <p>Salary: $60,000 per year</p>
+                <button class="apply-button">Apply</button>
+            </div>
+
+            <div class="job-card">
+                <h2>Project Manager</h2>
+                <p>Company: Acme Inc.</p>
+                <p>Location: Chicago</p>
+                <p>Salary: $90,000 per year</p>
+                <button class="apply-button">Apply</button>
+            </div>
+
+            <div class="job-card">
+                <h2>Data Analyst</h2>
+                <p>Company: DataCorp</p>
+                <p>Location: San Francisco</p>
+                <p>Salary: $75,000 per year</p>
+                <button class="apply-button">Apply</button>
+            </div>
+
+            <div class="job-card">
+                <h2>Software Engineer</h2>
+                <p>Company: Tech Innovators</p>
+                <p>Location: Austin</p>
+                <p>Salary: $95,000 per year</p>
+                <button class="apply-button">Apply</button>
+            </div>
+
+            <div class="job-card">
+                <h2>Marketing Specialist</h2>
+                <p>Company: MarketPro</p>
+                <p>Location: Seattle</p>
+                <p>Salary: $70,000 per year</p>
+                <button class="apply-button">Apply</button>
+            </div>
+            <div class="job-card">
+                <h2>Sales executive</h2>
+                <p>Company:celebai</p>
+                <p>Location: Delhi</p>
+                <p>Salary: $90,000 per year</p>
+                <button class="apply-button">Apply</button>
+            </div>
+            <div class="job-card">
+                <h2>Customer Support</h2>
+                <p>Company: Hexaview</p>
+                <p>Location: Austria</p>
+                <p>Salary: $20,000 per year</p>
+                <button class="apply-button">Apply</button>
+            </div>
+            <div class="job-card">
+                <h2>Finance and Accounting</h2>
+                <p>Company:Positt </p>
+                <p>Location:Banglore</p>
+                <p>Salary: $30,000 per year</p>
+                <button class="apply-button">Apply</button>
+            </div>
+        </div>
+    </main>
+    <main>
+        <div class="signup-form">
+            <h2>Sign Up for Job Alerts</h2>
+            <form>
+                <div class="form-group">
+                    <div class="name-email-inputs">
+                        <div class="name-input">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="email-input">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="signup-button">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">support</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Partners</h4>
+                    <ul>
+                        <li><a href="#">edurev</a></li>
+                        <li><a href="#">bdwer</a></li>
+                        <li><a href="#">alcado</a></li>
+                        <li><a href="#">drone</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+    
+</body>
+</html>
